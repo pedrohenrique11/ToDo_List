@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>To Do List</title>
 </head>
 <body>
     <container>
-        <div class="header">
-            <h2>To do list</h2>
-        </div>
-        <div class="task__container">
-            <div class="add--task__container">
-                <h3>Add Task</h3>
+        <div class="container">
+            <div class="header">
+                <h2>Today Dasks</h2>
             </div>
-            <div class="task--list__container">
-                <ul class="task--list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="task__container">
+                <form>
+                    <input 
+                        id="new__task"
+                        type="text"
+                        placeholder="add new task"/>
+                    <input 
+                        id="new__task__submit"
+                        type="submit"
+                        value="Add Task" />
+                </form>
+                <div class="task--list__container">
+                    <ul class="task--list">
+                        <li class="task">
+                            <input id="checkbox" type="checkbox" name="task" value="">
+                            <label for="task"> Ir ao mercado</label>
+                        </li>
+                        <li class="task checked">
+                            <input id="checkbox" type="checkbox" name="task" value="">
+                            <label for="task"> Ir para academia</label>                          
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </container>
