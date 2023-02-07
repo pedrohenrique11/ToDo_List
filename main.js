@@ -1,29 +1,29 @@
 const addTaskButton = document.getElementById("newTaskButton"); 
 const newTask = document.getElementById("newTask");
 const taskList = document.getElementById("taskList");
-const newTaskValue = newTask.value;
 
-addTaskButton.addEventListener("click", addNewTask) // Adiciona o evento ao botão
+// Adicionar as novas tarefas
+addTaskButton.addEventListener("click", addNewTask)
 
 function addNewTask(event) {
     event.preventDefault();
 
-        const task = addTaskButton.value;
+        const task = newTask.value;
 
         const li = document.createElement("li"); // Criando o intem da lisa
         li.classList.add('task');
         
         const input = document.createElement("input"); // criando botão de checklist 
         input.classList.add("checkbox");
-        input.value = checkbox;
         input.type = "checkbox";
 
-        const inputTask = document.createElement("p"); // Criando o conteudo da tarefa
-        
-        
+        const text = document.createElement("p"); // Criando o conteudo da tarefa
+        text.innerHTML = `${task}`;
+
         taskList.appendChild(li);
         li.appendChild(input);
-        li.appendChild(inputTask)
+        li.appendChild(text)
+
 
     
         console.log(task)
