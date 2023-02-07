@@ -16,22 +16,19 @@
             <div class="task__container">
                 <form>
                     <input 
-                        id="new__task"
+                        id="newTask"
                         type="text"
                         placeholder="add new task"/>
-                    <input 
-                        id="new__task__submit"
-                        type="submit"
-                        value="Add Task" />
+                    <button id="newTaskButton" type="submit" >Add task</button>
                 </form>
-                <div class="task--list__container">
-                    <ul class="task--list">
+                <div class="task_list_container">
+                    <ul class="task--list" id="taskList">
                         <li class="task">
-                            <input id="checkbox" type="checkbox" name="task" value="">
+                            <input id="checkbox" class="checkbox" type="checkbox" name="task" value="">
                             <label for="task"> Ir ao mercado</label>
                         </li>
                         <li class="task checked">
-                            <input id="checkbox" type="checkbox" name="task" value="">
+                            <input id="checkbox" class="checkbox" type="checkbox" name="task" value="">
                             <label for="task"> Ir para academia</label>                          
                         </li>
                     </ul>
@@ -39,5 +36,6 @@
             </div>
         </div>
     </container>
+    <script src="main.js"></script>
 </body>
 </html>
