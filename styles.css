@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,21 +51,8 @@ form {
     display: flex;
     align-items: center;
 }
-#newTaskButton {
-    height: 35px;
-    margin: 10px 0px 50px 5px;
-
-    font-weight: 600;
-
-    border-radius: 5px;
-    border: none;
-
-    color: #797B83;
-    background-color: #22252D;
-
-    cursor: pointer;
-}
-#newTask {
+#newTaskInput {
+    color: antiquewhite;
     background-color: #292C36;
     border-radius: 5px;
     border: none;
@@ -77,6 +65,21 @@ form {
     font-size: 14px;
     font-weight: 300;
 }
+#newTaskButton {
+    height: 35px;
+    margin: 10px 0px 50px 5px;
+
+    font-size: 30px;
+    font-weight: 400;
+
+    border-radius: 5px;
+    border: none;
+
+    color: #797B83;
+    background-color: #22252D;
+
+    cursor: pointer;
+}
 
 .task__container {
     display: flex;
@@ -86,27 +89,50 @@ form {
 .task {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+
+    text-align: start;
 
     height: 25px;
     width: 95%;
     padding: 4px 10px;
     margin: 10px 0px;
     font-size: 15px;
-}
-.task > input[type='checkbox']:checked + div{
-    color: #797B83;
-    text-decoration: line-through;
+
     background-color: #292C36;
     border-radius: 5px;
+    color: #797B83;
+}
+.done{
+    text-decoration: line-through;
 } 
+.task div {
+    display: flex;
+}
+.task button {
+    color: #797B83;
 
+    font-weight: 200;
+
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
 .checkbox {
-    color: currentColor;
+    appearance: none;
 
-    width: 15px;
-    height: 15px;
-    margin: 0px 5px 5px 0px;
+    background: #22252D;
+    border: 2px solid white;
+    cursor: pointer;
+
+    width: 16px;
+    height: 16px;
+    margin: 0px 10px 0px 0px;
 
     border: none;
     border-radius: 5px;
+}
+.checkbox:before {
+background: #292C36;
 }
