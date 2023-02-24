@@ -3,7 +3,11 @@ const newTaskInput = document.getElementById("newTaskInput");
 const taskListContainer = document.getElementById("taskList");
 
 
-
+class Task {
+    constructor(description){
+        this.description = description;
+    }
+}
 
 
 class TaskList {
@@ -11,7 +15,7 @@ class TaskList {
         this.task = []; // atribuindo o valor de task ao array
     }
     addTask(description) {
-        const task = new Tpasask(description) // criando novo objeto 
+        const task = new Task(description) // criando novo objeto 
         this.task.push(task)
     }
     removeTask(index) {
